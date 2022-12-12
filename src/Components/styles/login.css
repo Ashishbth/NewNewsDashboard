@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+label{
+    font-size: bold;
+    font-size: 1.5rem;
+    color: beige;
+}
+
+input{
+    height: 2.5rem !important;
+    width: 70%;
+    margin-bottom: 25px;
+}
+
+h1{
+    font-size: 900;
+}
+
+.name{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+
+.body{
+    /* width: 100vh; */
+    height: 100vh;
+    background: url(../img/N.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.red{
+    border: 4px solid red;
+}
+.green{
+    border: 4px solid blue;
+
+}
+
+.container{
+    width: 40vw;
+
+    height: auto;
+    margin-left: 10%;
+    /* margin: auto; */
+    border: 2px solid #ffed;
+    /* display: flex; */
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    border-radius: 5%;
+    /* border-radius: 2.5rem; */
+    animation: down 1s linear  1 none ;
+}
+@keyframes down {
+    0%{
+        position: absolute;
+        top: -80%;
+    }
+    100%{
+        position: absolute;
+        top: 25%;
+
+    }
+    
+}
+.heading{
+    margin-top: 3vh ;
+    margin-bottom: 3vh;
+}
+
+.heading h4{
+    margin-top: 2vh;
+    padding: 10px;
+}
+
+.btn{
+    width: 25%;
+    height: 3rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: transparent;
+    color: #fff;
+    border: #fff 2px solid;
+}
+
+.btn:hover{
+    box-shadow : 2px 2px 8px 8px white
+}
+
+
+.line{
+    width: 45vw;
+    height: 6px;
+    margin-left: 8%;
+    background: #fff;
+    position: absolute;
+    top: 80vh;
+    /* rotate: -90deg; */
+    animation: setup 1s linear 0s 1;
+}
+@keyframes setup {
+    0%{
+        margin-left: 100%;
+    }
+    100%{
+        margin-left: 8%;
+    }
+}
+@media only screen and (max-width :420px){
+    .container{
+        width: 80vw;
+    }
+    .line{
+        width: 82vw;
+
+        margin-left: 9%;
+    }
+}

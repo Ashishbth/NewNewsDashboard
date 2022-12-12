@@ -1,0 +1,38 @@
+.conatact-box{
+    position: relative;
+    top: 10vh;
+    width: 40%;
+    height: auto;
+    /* border: 2px solid red; */
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(123, 120, 120, 0.5);
+    box-shadow: 1px 1px 3px 3px rgb(188, 188, 157);
+}
+
+.contact-itmes input{
+    width: 30vw;
+}
+.mssg{
+    width: 35vh;
+}
+
+@media only screen and (max-width:860px) {
+    .mssg{
+        width: auto;
+    }
+}
+
+.contact-btn{
+    background: blue;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    margin: 2vh 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    border: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}

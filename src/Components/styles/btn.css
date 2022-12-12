@@ -1,0 +1,8 @@
+.top-button button{
+    width: 7vw;
+    height: 4vh;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    scroll-behavior: smooth;
+}

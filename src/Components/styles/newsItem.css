@@ -1,0 +1,58 @@
+.box img{
+    width: 30vw;
+    height: 30vh;
+    box-shadow: 1px 1px 3px 3px grey;
+}
+h2{
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 1% 0;
+    letter-spacing: 3px;
+    
+}
+.box{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.box ul li{
+    list-style: none;
+    margin: 2%;
+}
+.box ul li .newsItem{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  
+}
+.content-left{
+    width: 40%;
+}
+.content-right{
+    margin: 1rem;
+    width: 50%;
+    font-size: 20px;
+    padding: 3%;
+    text-align: center;
+    word-spacing: 5px;
+    line-height: 30px;
+}
+.content-right button:hover{
+    border: 2px solid blue;
+}
+
+.content-right button{
+    height: 4vh;
+    width: 6vw;
+    background: blue;
+    border: 2px solid white;
+}
+
+.content-right button .click{
+    margin: 5% 0;
+    text-decoration: none;
+    color: aliceblue;
+}
+
