@@ -11,11 +11,28 @@ const NewsList = () => {
         let res = await response.json();
         
         setData(await res);
-    }
+    };
+
+    // const getData = async ()=>{
+    //     const options = {
+    //         method: 'GET',
+    //         headers: {
+    //             'X-BingApis-SDK': 'true',
+    //             'X-RapidAPI-Key': '24267c6c36msh467ce46c6269739p1fcc5djsn1ed55df1766e',
+    //             'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com'
+    //         }
+    //     };
+        
+    //   const response = await fetch('https://bing-news-search1.p.rapidapi.com/news?safeSearch=Off&textFormat=Raw', options);
+    //   let res = await response.json();
+    //   console.log(res.value);
+            
+    // }
 
     useEffect( () => {
     
         getResult();
+        // getData();
 
     },[]);
 
