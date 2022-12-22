@@ -8,7 +8,7 @@ h2{
     font-size: 2rem;
     margin: 1% 0;
     letter-spacing: 3px;
-    
+     
 }
 .box{
     width: 80%;
@@ -46,6 +46,7 @@ h2{
 .content-right button{
     height: 4vh;
     width: 6vw;
+    margin-top: 3%;
     background: blue;
     border: 2px solid white;
 }
@@ -54,5 +55,46 @@ h2{
     margin: 5% 0;
     text-decoration: none;
     color: aliceblue;
+}
+
+@media only screen and (max-width: 1038px){
+    .news-box{
+        width: 80%;
+        display: inline-block;
+        position: relative;
+        left: 8%;
+        margin: auto;
+        /* border: 2px solid red; */
+    }
+    .content-left{
+        width: 80%;
+        margin: auto;
+        /* border: 2px solid black; */
+    }
+    .content-right{
+        width: 80%;
+        margin: auto;
+        /* border: 2px solid black; */
+    }
+    .cnt-img{
+        width: 100%;
+        height: auto;
+        /* border: 2px solid red; */
+        position: relative;
+        left: 22%;
+        margin: auto;
+    }
+    .newsItem{
+        display: inline-block;
+        margin: auto;   
+    }
+
+    .link-btn{
+        margin-top: 2%;
+        /* width: 20%; */
+        
+    }
+
+  
 }
 

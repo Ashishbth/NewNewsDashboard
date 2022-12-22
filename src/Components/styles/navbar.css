@@ -2,21 +2,50 @@
     margin: 0;
     padding: 0;
 }
+
+
 .navbar{
     width: 100vw;
-    height: 10%;
-    background: #000;
+    /* height: 10%; */
+    background: rgb(104, 101, 101);
     color: aliceblue;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 
 .nav-items{
-    width: 90%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding: 1.8%;
     margin: auto;
+    /* display: none; */
 }
+
+.logo{
+    display: none;
+}
+
+.logo button{
+    padding: 20%;
+    border-radius: 10px ;
+}
+
+.logo button:hover{
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-components{
+        display: none;
+    }
+
+    .logo{
+        display: block;
+    }
+}
+
 
 .nav-components ul {
     display: flex;
@@ -24,14 +53,14 @@
     vertical-align: middle;
 }
 .nav-components ul li{
-    margin-top: 2.5vh;
     list-style: none;
 }
 
 
 
+
 .nav-components ul a {
-    margin-top: 15%;
+    
     margin: 0 20px;
     text-decoration: none;
     font-size: 30px;
@@ -39,11 +68,12 @@
 }
 .nav-components ul a:hover{
     font-weight: 600;
+    
 
 }
 
 
-.nav-components ul li a::after{
+/* .nav-components ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
@@ -53,7 +83,9 @@
     top: 11vh;
     bottom: -6px;
     transition: 0.5s;
-}
+} */
+
+
 .nav-components ul li a:hover::after{
     width: 100%;
 }
@@ -62,4 +94,46 @@ img{
     height: 80px;
     width: 80px;
     margin-top: 1%;
+}
+
+.toggle-menu{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0%;
+    background: rgb(229, 225, 225);
+    transition: 0.5s;
+    display: none;
+    z-index: 5;
+
+}
+.toggle-items ul li{
+    width: 80%;
+    height: 10%;
+    margin: 10% auto;
+    border: 2px solid white;
+    padding: 2%;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    box-shadow: 1px 1px 4px 4px grey;
+}
+.toggle-items ul li:hover{
+    box-shadow: 2px 2px 8px 8px grey; 
+}
+
+.toggle-items ul li a {
+    text-decoration: none;
+    color: rgb(37, 34, 34);
+    font-size: 2rem;
+}
+
+.hide{
+    display: none;
+    transition: 0.5s;
+}
+
+.show{
+    display: block;
+    scroll-behavior: smooth;
 }

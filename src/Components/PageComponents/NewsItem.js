@@ -2,26 +2,26 @@ import React from "react";
 import '../styles/newsItem.css';
 
 const NewsItem = ({data}) => {
-    console.log(data);
+    
     let res;
     if(data){
 
          res = data.map((res) => {
             return (
                 
-                <li key={res.title}>
-                    <h2>{res.title}</h2>
+                <li key={res.datePublished}>
+                    <h2>{res.name}</h2>
                     <div className="newsItem">
                         <div className="content-left">                        
-                             <img src={res.urlToImage} alt="" />
+                             <img className="cnt-img" src="https://source.unsplash.com/1600x500/?news" alt="img" />
                         </div>
 
                         <div className="content-right">
-                            <p>{res.content}</p>
-                            <button><a className="click" href={res.url}>Read More</a></button>
+                            <p>{res.description}</p>
+                            <button className="link-btn"><a className="click" href={res.url}>Read More</a></button>
                         </div>
                     </div>
-                </li>
+                </li> 
                 )
             })
         }
@@ -31,7 +31,7 @@ const NewsItem = ({data}) => {
     
     return(
         <>
-        <div className="box">
+        <div className="box news-box">
             <ul>{res}</ul>
         </div>
         

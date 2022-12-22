@@ -11,7 +11,7 @@ const FunctionProvider = ({children}) => {
     return (
         <Context.Provider value={{name , callEvent}}>
             {children}
-        </Context.Provider>
+        </Context.Provider> 
     )
 
 };

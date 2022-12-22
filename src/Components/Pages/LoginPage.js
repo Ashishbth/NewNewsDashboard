@@ -6,14 +6,26 @@ const LoginPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [color , setColor] = useState('');
+  const [emailColor , setEmailColor] = useState('');
 
   const handleClick = (event) => {
-    if (name === "" || email === "") {
+    if ((name === "" || email === "")) {
       alert("Fill The Required Field's");
       setColor('red');
       event.preventDefault();
     }
+    else{
+      setColor('green')
+    }
+    
+    if(!(email.includes('@')||email.includes('.'))){
+      alert("Invalid Email");
+      setEmailColor('red');
+      event.preventDefault();
+    }
+  
   };
+  
 
   return (
     <>
@@ -43,7 +55,7 @@ const LoginPage = () => {
             <br />
             
             <input
-            className={color}
+            className={emailColor}
             type="text"
             name="email"
             value={email}
